@@ -13,6 +13,9 @@ import { PositionsComponent } from './positions/positions.component';
 import { PageNotFoundComponent } from './pageNotFound/page-not-found.component';
 import { PositionService } from './data/position.service';
 import { EmployeeService } from './data/employee.service';
+import { EmployeeComponent } from './employee/employee.component';
+import { PositionComponent } from './position/position.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { EmployeeService } from './data/employee.service';
     EmployeesComponent,
     PositionsComponent,
     PageNotFoundComponent,
+    EmployeeComponent,
+    PositionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [PositionService, EmployeeService],
   bootstrap: [AppComponent]
